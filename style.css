@@ -209,3 +209,11 @@ h1 {
     /* Dodaj klasę fixed-top */
   }
 }
+
+a:hover {
+  font-size: 30px;
+}
+
+#ikony img:hover {
+  height: 60px;
+}
