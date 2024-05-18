@@ -164,11 +164,20 @@ h1 {
 
 #ikony {
   display: flex;
-  justify-content: center; /* Wyśrodkowanie w poziomie */
-  margin-right: 1.3em;
+  justify-content: center;
 }
 
-#stopka #stopka2 {
+#stopka {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 7em;
+}
+
+#stopka2 {
   display: flex;
   justify-content: center;
   font-size: 1em;
@@ -186,7 +195,7 @@ h1 {
   padding: 1% 5%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #navbar {
     position: fixed;
     top: 0;
