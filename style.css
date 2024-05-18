@@ -185,3 +185,18 @@ h1 {
   justify-content: center;
   padding: 1% 5%;
 }
+
+@media (min-width: 576px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  #navbar.fixed-top {
+    position: fixed;
+    /* Dodaj klasę fixed-top */
+  }
+}
