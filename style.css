@@ -127,17 +127,6 @@ table {
   border-spacing: 0;
 }
 
-a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: rgb(74, 74, 74);
-  font-size: 1.5em;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 h1 {
   display: flex;
   justify-content: center;
@@ -160,11 +149,6 @@ h1 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-#ikony {
-  display: flex;
-  justify-content: center;
 }
 
 #stopka {
@@ -206,14 +190,90 @@ h1 {
 
   #navbar.fixed-top {
     position: fixed;
-    /* Dodaj klasę fixed-top */
   }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
   font-size: 30px;
 }
 
+#ikony {
+  display: flex;
+  justify-content: center;
+}
+
+#ikony img {
+  transition: transform 0.3s ease;
+}
+
 #ikony img:hover {
-  height: 60px;
+  transform: scale(1.2);
+}
+
+.share-menu a {
+  display: inline-block;
+  width: 9em;
+  height: 3em;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  border: 2px solid #333333;
+  font-size: 0.8rem;
+  border-radius: 260px;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  background: #ffffff;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: black !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.3em;
+  transition: transform 0.3s ease; /* Dodanie płynnego przejścia dla transformacji */
+}
+
+.share-menu a:hover {
+  transform: scale(1.2); /* Powiększenie przycisku przy najechaniu */
+}
+
+#scrollTopButton {
+  border: 2px white solid;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
+#copy-icon {
+  cursor: pointer;
+  transition: 0.3s ease; /* Płynne przejście koloru tła */
+}
+
+#copy-icon:hover {
+  transform: scale(1.2);
 }

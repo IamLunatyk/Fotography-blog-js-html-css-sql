@@ -21,50 +21,87 @@
   </head>
 
   <body>
-    <div class="container-fluid border">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-md-3 border fixed-top-custom" id="navbar">
-          <img
-            class="img-fluid"
-            src="/logo/Black Simple Capture Dream Photography Logo_20240518_110051_0000.png"
-            alt=""
-          />
+        <div class="col-sm-12 col-md-3 fixed-top-custom border" id="navbar">
+          <a href="http://127.0.0.1:5500/index.html">
+            <img
+              class="img-fluid"
+              src="/logo/Black Simple Capture Dream Photography Logo_20240518_110051_0000.png"
+              alt=""
+            />
+          </a>
           <p>
             <a href="https://www.google.pl/">Kup moje printy</a>
             <br />
-            <a href="https://www.google.pl/">O mnie</a>
+            <a href="http://127.0.0.1:5500/about.html">O mnie</a>
             <br />
             <a href="https://www.google.pl/">Wynajmij mnie</a>
           </p>
-
+          <!--Zaczyna sie div ikony-->
           <div id="ikony" class="mt-5">
             <a
               href="https://www.instagram.com/katekornitzky?igsh=MTRqbmp3bnV0MnJiNA=="
-              style="display: inline-block; margin-right: 1.5em"
+              class="icon-link mx-2"
+              id="ig"
             >
               <img src="/icons/icons8-instagram-100.png" alt="Instagram Icon" />
             </a>
             <a
               href="https://www.facebook.com/KatarzynaKornitzky"
-              style="display: inline-block; margin-right: 1.5em"
+              class="icon-link mx-2"
             >
               <img src="/icons/icons8-facebook-50.png" alt="Facebook Icon" />
             </a>
             <a
               href="mailto:katarzyna.kornitzky@gmail.com"
-              style="display: inline-block"
+              class="icon-link mx-2"
             >
               <img src="/icons/icons8-email-50.png" alt="Email Icon" />
             </a>
+            <!-- TUTAJ ZACZYNA SIE SHARE BUTTON -->
+            <a id="shareButton" class="icon-link mx-2" style="cursor: pointer">
+              <img src="/icons/icons8-share-50.png" alt="Share Icon" />
+            </a>
+            <div id="shareMenu" class="share-menu" style="display: none">
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                href="https://api.whatsapp.com/send?text=TEKST_DO_UDOSTĘPNIENIA%20http://127.0.0.1:5500/index.html"
+                target="_blank"
+                >WhatsApp</a
+              >
+              <a
+                href="https://twitter.com/intent/tweet?text=
+Ich%20empfehle%20einen%20Fotografen&url=http://127.0.0.1:5500/index.html&über=TwojaNazwaUzytkownika"
+                target="_blank"
+                >Twitter</a
+              >
+              <a href="instagram://camera" target="_blank">Instagram</a>
+            </div>
+            <!-- TUTAJ KONCZY SIE SHARE BUTTON -->
           </div>
+          <!--Konczy sie div ikony-->
 
-          <p class="justify-content: center mt-5 md-mb-5" id="email">
-            katarzyna.kornitzky@gmail.com
+          <p class="email-container">
+            <span id="email">katarzyna.kornitzky@gmail.com</span>
+            <img
+              id="copy-icon"
+              src="/icons/icons8-copy-50.png"
+              alt="Kopiuj"
+              class="copy-icon"
+              onclick="copyToClipboard()"
+              style="scale: 0.5"
+            />
           </p>
+
           <p id="stopka">J Julian De Rise Photography</p>
           <p class="mt-2 mb-5" id="stopka2">Made with BŻ</p>
         </div>
-        <div class="col-sm-12 col-md-9 offset-md-3 border" id="zdjecia">
+        <div class="col-sm-12 col-md-9 offset-md-3" id="zdjecia">
           <div class="row">
             <div class="col-sm-4 col-md-2 p-1" data-lightbox="galeria">
               <a href="/images/IMG_1311.jpg" data-lightbox="galeria"
@@ -233,12 +270,14 @@
                   src="/images/IMG_3529 — kopia.jpg"
                   alt="Opis zdjęcia"
               /></a>
+
+              <button id="scrollTopButton" class="btn btn-primary">UP</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
