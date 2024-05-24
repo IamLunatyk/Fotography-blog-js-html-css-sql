@@ -314,19 +314,19 @@ text-align: center;
 
 .rounded-social-buttons .social-button {
   display: inline-block;
-  position: relative;
+  position:relative;
   cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 4.125rem;
+  height: 4.125rem;
   border: 0.125rem solid transparent;
-  padding: 0;
+  padding: 5px;
   text-decoration: none;
   text-align: center;
   color: #fefefe;
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
-  border-radius: 1.6875rem;
+  border-radius: 50%;
   
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
@@ -412,33 +412,3 @@ border-color: #ffffff;
 
 
 /*Share buttony*/
-
-#toggleButton {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#box {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  width: 300px;
-  text-align: center;
-  transition: max-height 0.3s ease;
-  overflow: hidden;
-  max-height: 0;
-}
-
-#box p {
-  margin: 0;
-}
-
-.hidden {
-  max-height: 0;
-}
-
-.visible {
-  max-height: 200px; /* lub inną odpowiednią wartość */
-}

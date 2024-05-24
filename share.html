@@ -13,12 +13,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-      crossorigin="anonymous"
-    ></script>
+    <!--
+
 
     <section class="container-fluid px-0 container-box">
       <div class="row align-items-center justify-content-center box">
@@ -54,7 +50,79 @@
         </div>
       </div>
     </section>
-    <button id="pop-btn" class="btn btn-primary">POP</button>
+    -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-inline-block text-end">
+            <div
+              class="share-button-box justify-content-center align-items-center"
+            >
+              <div class="rounded-social-buttons">
+                <a
+                  class="social-button facebook"
+                  href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="social-button twitter"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="social-button linkedin"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  class="social-button instagram"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <br />
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              X
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal-->
 
     <script type="module" src="/index.js"></script>
     <script
