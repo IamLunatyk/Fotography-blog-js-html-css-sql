@@ -57,3 +57,37 @@ function copyToClipboard() {
   navigator.clipboard.writeText(emailText);
   alert("Adres e-mail został skopiowany do schowka!");
 }
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const socialButtons = document.querySelectorAll(
+      ".rounded-social-buttons .social-button"
+    );
+    socialButtons.forEach((button) => {
+      button.style.opacity = "1";
+    });
+  }, 3000); // 3 sekundy
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("toggleButton");
+  const box = document.getElementById("box-2");
+
+  toggleButton.addEventListener("click", function () {
+    if (box.classList.contains("hidden")) {
+      box.classList.remove("hidden");
+      box.classList.add("visible");
+      toggleButton.textContent = "Zamknij Box";
+    } else {
+      box.classList.remove("visible");
+      box.classList.add("hidden");
+      toggleButton.textContent = "Otwórz Box";
+    }
+  });
+});
+
+function zmienKolorTlaNaCzerwony() {
+  document.body.style.backgroundColor = "red";
+}
+
+zmienKolorTlaNaCzerwony();
