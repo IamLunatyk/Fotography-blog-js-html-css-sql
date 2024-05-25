@@ -18,12 +18,27 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-md-3 fixed-top-custom" id="navbar">
+        <!--ZACZYNA SIE NAV-->
+        <script
+          defer
+          src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+          integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+          crossorigin="anonymous"
+        ></script>
+
+        <div class="col-sm-12 col-md-3 fixed-top-custom py-3" id="navbar">
           <a href="http://127.0.0.1:5500/index.html">
             <img
               class="img-fluid"
@@ -32,14 +47,15 @@
             />
           </a>
           <p>
-            <a href="https://www.google.pl/">Fotografia kobieca</a>
+            <a href="http://127.0.0.1:5500/woman.html">Fotografia kobieca</a>
             <br />
-            <a href="https://www.google.pl/">Eventy</a>
+            <a href="http://127.0.0.1:5500/event.html">Eventy</a>
             <br />
-            <a href="https://www.google.pl/">Jedzenie</a>
+            <a href="http://127.0.0.1:5500/food.html">Jedzenie</a>
             <br />
             <a href="http://127.0.0.1:5500/about.html">O mnie</a>
           </p>
+
           <!--Zaczyna sie div ikony-->
           <div id="ikony" class="mt-5">
             <a
@@ -62,41 +78,75 @@
               <img src="/icons/icons8-email-50.png" alt="Email Icon" />
             </a>
             <!-- TUTAJ ZACZYNA SIE SHARE BUTTON -->
-            <a id="shareButton" class="icon-link mx-2" style="cursor: pointer">
+            <a
+              id="shareButton"
+              class="icon-link mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              style="cursor: pointer"
+            >
               <img src="/icons/icons8-share-50.png" alt="Share Icon" />
             </a>
-            <div id="shareMenu" class="share-menu" style="display: none">
-              <div>
-                <div class="share-button-box">
-                  <div class="rounded-social-buttons">
-                    <a
-                      class="social-button facebook"
-                      href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/index.html"
-                      target="_blank"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a
-                      class="social-button twitter"
-                      href="https://www.twitter.com/"
-                      target="_blank"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a
-                      class="social-button linkedin"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                    <a
-                      class="social-button instagram"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header d-inline-block text-end">
+                    <div
+                      class="share-button-box justify-content-center align-items-center"
+                    >
+                      <div class="rounded-social-buttons">
+                        <a
+                          class="social-button facebook"
+                          href="https://www.facebook.com/sharer/sharer.php?u=https://katekornitzky.eu"
+                          target="_blank"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a
+                          class="social-button twitter"
+                          href="https://twitter.com/intent/tweet?url=https://katekornitzky.eu"
+                          target="_blank"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a
+                          class="social-button linkedin"
+                          href="https://www.linkedin.com/sharing/share-offsite/?url=https://katekornitzky.eu"
+                          target="_blank"
+                        >
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a
+                          class="social-button instagram"
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <br />
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      X
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- TUTAJ KONCZY SIE SHARE BUTTON -->
           </div>
           <!--Konczy sie div ikony-->
@@ -112,10 +162,8 @@
               style="scale: 0.5"
             />
           </p>
-
-          <p id="stopka">J Julian De Rise Photography</p>
-          <p class="mt-2 mb-5" id="stopka2">Made with BŻ</p>
         </div>
+        <!--KONCZY SIE NAV-->
         <div class="col-sm-12 col-md-9 offset-md-3" id="zdjecia">
           <div class="row">
             <div class="col-sm-4 col-md-2 p-1" data-lightbox="galeria">

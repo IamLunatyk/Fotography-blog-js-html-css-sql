@@ -185,7 +185,7 @@ h1 {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 9999;
   }
 
   #navbar.fixed-top {
@@ -388,27 +388,15 @@ border-color: #ffffff;
   padding: 2rem;
 }
 
-/*box*/
+/*Modal*/
 
-.container-box {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+.modal-header {
+  margin-top: 50px;
 }
-.box {
-  border-radius: 20px;
-  width: 480px;
-  height: 240px;
-  background: #fafafa;
-  box-shadow: 40px 40px 40px #cccccc,
-              0 0 0 #ffffff,
-              0 0 0 #cccccc inset,
-              2px 2px 2px #ffffff inset;
+.modal {
+  align-content: center;
 }
 
+@media (min-width: 769px) and (max-width: 1199px) {
 
-
-/*Share buttony*/
+}
